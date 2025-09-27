@@ -1,8 +1,0 @@
-upgrade design alert pada web-laporan-kas
-
-Aplikasi Web URL:
-https://script.google.com/macros/s/AKfycbyfHR-HVmSAavzmpkE3ZHeUNCvkDXsyg3BEMmepocWsSToc1yZhdrMfFuGHtgXzwrkgrQ/exec
-ID Penerapan :
-AKfycbyfHR-HVmSAavzmpkE3ZHeUNCvkDXsyg3BEMmepocWsSToc1yZhdrMfFuGHtgXzwrkgrQ
-Library URL:
-https://script.google.com/macros/library/d/1fZbGzyp3sm1lHUoC2johhnHDNKG51O1JDj4a4X22tcEi8Fuecf5EamGw/4
