@@ -11,18 +11,59 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-light">
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <h1 class="text-center mb-4">📝 Formulir Laporan Kas</h1>
+    <div class="container mt-4">
+      <h1 class="text-center me-3">📊 Dashboard Laporan Kas</h1>
+
+      <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+          <div class="card text-white bg-success">
+            <div class="card-header">Total Pemasukan</div>
+            <div class="card-body">
+              <h4 class="card-title" id="totalPemasukan">
+                <span class="spinner-border spinner-border-sm"></span>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card text-white bg-danger">
+            <div class="card-header">Total Pengeluaran</div>
+            <div class="card-body">
+              <h4 class="card-title" id="totalPengeluaran">
+                <span class="spinner-border spinner-border-sm"></span>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card text-dark bg-warning">
+            <div class="card-header">Saldo Akhir</div>
+            <div class="card-body">
+              <h4 class="card-title" id="saldoAkhir">
+                <span class="spinner-border spinner-border-sm"></span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">📝 Tambah Transaksi Baru</h3>
           <form id="kasForm">
             <div class="mb-3">
               <label for="tanggal" class="form-label">Tanggal</label>
               <input type="date" class="form-control" id="tanggal" required />
             </div>
-
             <div class="mb-3">
               <label for="keterangan" class="form-label">Keterangan</label>
               <input
@@ -33,7 +74,6 @@
                 required
               />
             </div>
-
             <div class="mb-3">
               <label for="jenis" class="form-label">Jenis Transaksi</label>
               <select class="form-select" id="jenis" required>
@@ -42,19 +82,17 @@
                 <option value="pengeluaran">Pengeluaran</option>
               </select>
             </div>
-
             <div class="mb-3">
               <label for="jumlah" class="form-label">Jumlah (Rp)</label>
               <input
-                type="number"
+                type="text"
                 class="form-control"
                 id="jumlah"
                 placeholder="Contoh: 25000"
-                min="0"
+                inputmode="numeric"
                 required
               />
             </div>
-
             <div class="d-grid">
               <button type="submit" class="btn btn-primary">
                 Simpan Laporan
